@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "I7+3x3K4tE2dcxBUg1vTM15SlUIZen6uU4hF6jxIwCk=",
+  "Source": "finapp.Api",
+  "BasePath": "_content/finapp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

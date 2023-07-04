@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DYHT5swrMg5pGtFmW2g0aG0mY6pfKp7C5aneTRf/DoXVKQvYZ8AGTUR7yJeC4Ex2Ey5uRjJNAl7Zr9OAQwp7XA==",
+  "success": true,
+  "projectFilePath": "/home/lucas/dev/finApp/finApp.csproj",
+  "expectedPackageFiles": [
+    "/home/lucas/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.7/microsoft.aspnetcore.app.ref.7.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
