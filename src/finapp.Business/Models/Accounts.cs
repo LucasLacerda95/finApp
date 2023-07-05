@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 
 
 
-namespace finnapp.Business.Models{
+namespace finapp.Business.Models{
 
     public class Accounts{
         [Key]
