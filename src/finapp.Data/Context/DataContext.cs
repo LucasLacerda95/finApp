@@ -1,3 +1,4 @@
+using finapp.Business.Models;
 using finapp.Data.Mappings;
 using finnapp.Business.Models;
 using Microsoft.EntityFrameworkCore;
@@ -11,9 +12,9 @@ namespace finapp.Data.Context{
             
         }
 
-        public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
-        public DbSet<Categories> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){

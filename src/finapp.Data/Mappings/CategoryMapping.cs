@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace finapp.Data.Mappings
 {
 
-    public class CategoryMapping : IEntityTypeConfiguration<Categories>
+    public class CategoryMapping : IEntityTypeConfiguration<Category>
     {
 
-        public void Configure(EntityTypeBuilder<Categories> builder)
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
 
-            builder.HasKey(c => c.CategoryId);
+            builder.HasKey(c => c.Id);
 
             builder.Property(c => c.CategoryName)
                 .IsRequired()

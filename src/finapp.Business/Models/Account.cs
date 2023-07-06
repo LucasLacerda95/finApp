@@ -4,12 +4,14 @@ using finnapp.Business.Models.Enums;
 using Microsoft.AspNetCore.Identity;
 
 
+namespace finapp.Business.Models
+{
 
-namespace finapp.Business.Models{
+    public class Account : Entity
+    {
 
-    public class Accounts{
-        [Key]
-        public Guid AccountId { get; set; }
+        [ForeignKey("User")]
+        public string? UserId { get; set; }
 
         public AccountType AccountType { get; set; }//Enums/AccountTypes
 
@@ -17,11 +19,8 @@ namespace finapp.Business.Models{
 
         public DateTime AccountDateRegister { get; set; }
 
-        public decimal AccountOpeningBalance  { get; set; }
+        public decimal AccountOpeningBalance { get; set; }
 
-        [ForeignKey("User")]
-        public string? UserId { get; set; }
-        
 
         /* Relacionamento EF*/
         public IdentityUser? User { get; set; }

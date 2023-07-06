@@ -1,5 +1,7 @@
 
 using AutoMapper;
+using finapp.Api.ViewModel;
+using finapp.Business.Models;
 
 namespace finapp.Api.Configuration{
 
@@ -7,6 +9,8 @@ namespace finapp.Api.Configuration{
 
         public AutomapperConfig(){
            
+           CreateMap<Account, AccountViewModel>().ReverseMap();
+
         }
     }
 }

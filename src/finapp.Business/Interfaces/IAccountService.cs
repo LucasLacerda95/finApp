@@ -5,8 +5,8 @@ namespace finapp.Business.Interfaces
 {
     public interface IAccountService : IDisposable
     {
-        Task ToAdd(Accounts account);
-        Task Update(Accounts account);
+        Task Add(Account account);
+        Task Update(Account account);
         Task Remove(Guid id);
 
     }
