@@ -21,6 +21,6 @@ namespace finapp.Business.Models
 
 
         /* Relacionamento EF*/
-        public IdentityUser? User { get; set; }
+        public IdentityUser User { get; set; }
     }
 }

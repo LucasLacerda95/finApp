@@ -22,7 +22,7 @@ namespace finapp.Data.Mappings
 
             builder.Property(a => a.AccountDateRegister)
                 .IsRequired()
-                .HasColumnType("datetime2");
+                .HasColumnType("datetime");
 
             builder.Property(a => a.AccountOpeningBalance)
                 .IsRequired()

@@ -71,7 +71,7 @@ namespace finapp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("IdentityUser");
+                    b.ToTable("AspNetUsers");
                 });
 
             modelBuilder.Entity("finapp.Business.Models.Account", b =>
