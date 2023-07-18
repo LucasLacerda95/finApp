@@ -4,7 +4,6 @@ using finapp.Api.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
 
 namespace finapp.Api.Configuration
@@ -17,8 +16,12 @@ namespace finapp.Api.Configuration
         public static IServiceCollection AddIdentityConfiguration(this IServiceCollection services, IConfiguration configuration){
 
 
+
+            var serverVersion = new MySqlServerVersion(new Version(11, 0, 2));
+
+
             services.AddDbContext<ApplicationDbContext>(options => 
-                options.UseSqlServer(configuration.GetConnectionString("connectionString")));
+                options.UseMySql(configuration.GetConnectionString("connectionString"), serverVersion));
 
             
             //Add Identity Configurations

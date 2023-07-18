@@ -1,9 +1,7 @@
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using finapp.Business.Models;
 using finnapp.Business.Models.Enums;
 using Microsoft.AspNetCore.Identity;
-
 
 namespace finnapp.Business.Models
 {

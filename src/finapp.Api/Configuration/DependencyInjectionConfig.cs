@@ -3,6 +3,7 @@ using finapp.Business.Services;
 using finapp.Data.Context;
 using finapp.Data.Repository;
 
+
 namespace finapp.Api.Configuration
 {
 
@@ -13,6 +14,7 @@ namespace finapp.Api.Configuration
         {
 
             services.AddScoped<DataContext>();
+
             services.AddScoped<IAccountRepository, AccountRepository>();
 
             services.AddScoped<IAccountService, AccountService>();

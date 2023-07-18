@@ -6,6 +6,11 @@ namespace finapp.Business.Services
 
     public class AccountService : IAccountService
     {
+        public Task Add(Account account)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Dispose()
         {
             throw new NotImplementedException();
@@ -16,12 +21,12 @@ namespace finapp.Business.Services
             throw new NotImplementedException();
         }
 
-        public Task ToAdd(Accounts account)
+        public Task ToAdd(Account account)
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(Accounts account)
+        public Task Update(Account account)
         {
             throw new NotImplementedException();
         }

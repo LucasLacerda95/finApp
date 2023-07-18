@@ -29,7 +29,7 @@ namespace finapp.Data.Repository
 
         public void Dispose()
         {
-            Db?.Dispose();
+            throw new NotImplementedException();
         }
 
         public async Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate)

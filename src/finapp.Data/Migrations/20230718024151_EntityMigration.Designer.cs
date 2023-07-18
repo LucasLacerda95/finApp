@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using finapp.Data.Context;
 
@@ -10,9 +11,11 @@ using finapp.Data.Context;
 namespace finapp.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230718024151_EntityMigration")]
+    partial class EntityMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,7 +81,7 @@ namespace finapp.Data.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<DateTime>("AccountDateRegister")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("AccountName")
                         .IsRequired()
@@ -112,7 +115,7 @@ namespace finapp.Data.Migrations
                         .HasColumnType("varchar(200)");
 
                     b.Property<DateTime>("CategoryRegisterDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<int>("CategoryType")
                         .HasColumnType("integer");

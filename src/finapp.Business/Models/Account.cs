@@ -1,8 +1,6 @@
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using finnapp.Business.Models.Enums;
 using Microsoft.AspNetCore.Identity;
-
 
 namespace finapp.Business.Models
 {
@@ -11,7 +9,7 @@ namespace finapp.Business.Models
     {
 
         [ForeignKey("User")]
-        public string? UserId { get; set; }
+        public string UserId { get; set; }
 
         public AccountType AccountType { get; set; }//Enums/AccountTypes
 

@@ -23,7 +23,7 @@ namespace finapp.Data.Mappings
 
             builder.Property(c => c.CategoryRegisterDate)
                 .IsRequired()
-                .HasColumnType("datetime2");
+                .HasColumnType("datetime");
 
 
             builder.HasOne(u => u.User)
