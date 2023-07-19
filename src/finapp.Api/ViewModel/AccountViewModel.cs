@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace finapp.Api.ViewModel
 {
@@ -23,7 +24,8 @@ namespace finapp.Api.ViewModel
         public decimal AccountOpeningBalance { get; set; }
 
 
-        [Required]
-        public Guid UserId { get; set; }
+        // [Required]
+        // public Guid UserId { get; set; }
+
     }
 }

@@ -15,5 +15,7 @@ namespace finapp.Data.Repository
         {
             return await Find(a => a.UserId == userId.ToString());
         }
+
+        
     }
 }

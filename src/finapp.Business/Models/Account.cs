@@ -1,11 +1,12 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using finnapp.Business.Models.Enums;
 using Microsoft.AspNetCore.Identity;
+using finapp.Business.Interfaces;
+using finnapp.Business.Models.Enums;
 
 namespace finapp.Business.Models
 {
 
-    public class Account : Entity
+    public class Account : Entity, IAccount
     {
 
         [ForeignKey("User")]

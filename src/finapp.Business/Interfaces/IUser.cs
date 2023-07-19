@@ -7,7 +7,7 @@ namespace finapp.Business.Interfaces{
 
         string Name { get; }
         Guid GetUserId();
-        string GeUserEmail();
+        string GetUserEmail();
         bool IsAuthenticated();
         bool IsInRole(string role);
         IEnumerable<Claim> GetClaimsIdentity();

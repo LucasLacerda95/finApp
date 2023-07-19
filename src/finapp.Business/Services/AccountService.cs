@@ -6,9 +6,16 @@ namespace finapp.Business.Services
 
     public class AccountService : IAccountService
     {
-        public Task Add(Account account)
+
+        private readonly IAccountRepository _accountRepository;
+
+        public AccountService(IAccountRepository accountRepository){
+            _accountRepository = accountRepository;
+        }
+
+        public async Task Add(Account account)
         {
-            throw new NotImplementedException();
+            await _accountRepository.Add(account);
         }
 
         public void Dispose()

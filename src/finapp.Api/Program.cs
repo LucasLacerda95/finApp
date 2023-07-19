@@ -15,6 +15,8 @@ builder.Services.ResolveDependencies(); //Configuration/DependencyInjectionConfi
 
 builder.Services.AddWebApiConfig(); //Configuration/ApiConfig
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 
